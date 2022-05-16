@@ -1,0 +1,10 @@
+{
+  "books": [
+    {
+      "bookName": "Makers_kg",
+      "bookAuthor": "2022 Makers © All rights reserved",
+      "bookImage": "https://makers.kg/assets/5fa63c0bbfbadb648dc12062/5fa63ceffc6e3566d8b699aa_logo.svg",
+      "id": 1
+    }
+  ]
+}

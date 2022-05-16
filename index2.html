@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link
+      rel="icon"
+      href="./assets/bf1617e7d40d7465ee712111fd7def5e-quality_70Xresize_crop_1Xallow_enlarge_0Xw_750Xh_463.jpg"
+      type="image/x-icon"
+    />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+
+    
+    <!-- EDIT MODAL START -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Редактирование</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <input
+              class="form-control me-2"
+              id="editInpName"
+              type="text"
+              placeholder="Название книги"
+              aria-label="Search"
+            />
+            <input
+              class="form-control me-2"
+              id="editInpAuthor"
+              type="Автор"
+              placeholder="Автор"
+              aria-label="Search"
+            />
+            <input
+              class="form-control me-2"
+              id="editInpImage"
+              type="text"
+              placeholder="Изображение"
+              aria-label="Search"
+            />
+            
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary btnSave"
+              id="editBtnSave"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Сохранить
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- EDIT MODAL FINISH -->
+    <div
+      class="d-flex flex-wrap align-items-center"
+      style="margin-left: 500px; margin-right: 82px"
+    >
+      <img
+        src="./assets/instagram.svg"
+        width="50"
+        height="100"
+        alt=""
+        style="
+          padding-left: -46p;
+          margin-left: -277px;
+          margin-right: 523px;
+          border-left-width: -1px; /* border-left-width: -3px; */
+        "
+      />
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+        <input
+          type="search"
+          class="form-control"
+          placeholder="Search..."
+          aria-label="Search"
+          style="margin-left: 19px"
+          id="inpSearch"
+        />
+      </form>
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 mb-md-0">
+        <li>
+          <a href="#" class="nav-link px-2 link-secondary"
+            ><img
+              width="30"
+              height="30"
+              src="./assets/house-door-fill.svg"
+              alt=""
+              srcset=""
+          /></a>
+        </li>
+        <li>
+          <a href="#" class="nav-link px-2 link-dark"
+            ><img
+              width="30"
+              height="30"
+              src="./assets/messenger.svg"
+              alt=""
+              srcset=""
+          /></a>
+        </li>
+        <li>
+          <a href="#" class="nav-link px-2 link-dark"
+            ><img
+              width="30"
+              height="30"
+              src="./assets/geo-alt-fill.svg"
+              alt=""
+              srcset=""
+          /></a>
+        </li>
+        <li>
+          <a href="#" class="nav-link px-2 link-dark"
+            ><img
+              width="30"
+              height="30"
+              src="./assets/chat-heart-fill.svg"
+              alt=""
+              srcset=""
+          /></a>
+        </li>
+      </ul>
+
+      <div class="dropdown text-end">
+        <a
+          href="#"
+          class="d-block link-dark text-decoration-none dropdown-toggle"
+          id="dropdownUser1"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img
+            src="./assets/instagram.svg"
+            alt="mdo"
+            width="32"
+            height="32"
+            class="rounded-circle"
+          />
+        </a>
+        <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+          <li><a class="dropdown-item" href="#"
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne"
+            aria-expanded="false"
+            aria-controls="flush-collapseOne"
+          >
+            Add post
+          
+        
+            <input
+              class="form-control me-2"
+              id="inpName"
+              type="text"
+              placeholder="Name"
+              aria-label="Search"
+            />
+            <input
+              class="form-control me-2"
+              id="inpAuthor"
+              type="Автор"
+              placeholder="Description"
+              aria-label="Search"
+            />
+            <input
+              class="form-control me-2"
+              id="inpImage"
+              type="text"
+              placeholder="IMG"
+              aria-label="Search"
+            />
+           
+            <button
+              class="btn btn-outline-success text-success"
+              id="btnAdd"
+              type="button"
+            >
+              Добавить
+            </button></a></li>
+          <li>
+            <hr class="dropdown-divider" />
+          </li>
+          <li><a class="dropdown-item" href="./index1.html">Sign out</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <br />
+
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-example2"
+      data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true"
+      class="scrollspy-example"
+      id="sectionBooks"
+      tabindex="0"
+      style="
+        align-items: center;
+        
+        display: flex;
+        flex-direction: column; /* ; */
+      "
+    >
+      <div id="scrollspyHeading1" style="border: 2px solid silver"></div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="./js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
